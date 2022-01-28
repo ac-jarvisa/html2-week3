@@ -15,7 +15,7 @@
             <li><a href="">Skip to footer</a></li>
         </ul>
     </div>
-    <nav>
+    <nav role="navigation">
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
@@ -35,6 +35,21 @@
             <label for="email">Email: </label>
             <input type="email" id="email" name="email">
         </form>
+        <!-- itemscope describes the schema "bounding box" for the object you are defining 
+            the type says which schema is being used - or which set of details -->
+        <article itemscope itemtype="https://schema.org/Person">
+            <img src="images/tyche.jpg" alt="Tyche as a kitten asleep on a blanket" aria-describedby="tycheInfo">
+            <section id="tycheInfo">
+                <!-- itemprops are a way of classifying the information within a given scope -->
+                <p itemprop="name">Tyche</p>
+                <p itemprop="birthDate">October 15, 2020</p>
+                <p>Tyche crawled out of our hedge in early November 2020.</p>
+            </section>
+        </article>
     </main>
+    <aside>
+        <!-- aria-label provides additional information or context about a object, like a link -->
+        <a href="" aria-label="Subscribe to the newsletter">Subscribe</a>
+    </aside>
 </body>
 </html>

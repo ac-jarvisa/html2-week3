@@ -60,3 +60,7 @@ nav li a:active{
 input:focus{
     border:2px solid black;
 }
+
+article img{
+    width:60%;
+}
